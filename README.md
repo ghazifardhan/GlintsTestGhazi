@@ -1,6 +1,7 @@
 # Glints Test
 
-Created By: Ghazi Fadil Ramadhan . 
-Login:  
-  Username: admin@admin.com . 
-  Password: password . 
+For Glints test purpose.
+
+  - Created by: Ghazi Fadil Ramadhan
+  - Username: admin@admin.com
+  - Password: password
