@@ -13,7 +13,7 @@ class InitLibrary {
     fun getAppStatus(): String {
         return when (BuildConfig.DEBUG) {
             true -> "http://glints.test"
-            false -> "http://ikat.ghazifadil.online"
+            false -> "http://glints.ghazifadil.online"
         }
     }
 
