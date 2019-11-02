@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Glints Test Ghazi</string>
+    <string name="create_book">Create Book</string>
+    <string name="book_title">Book Title</string>
+    <string name="book_description">Book Description</string>
+    <string name="total_item">Total Item</string>
+    <string name="supplier">Supplier</string>
+    <string name="transaction_date">Transaction Date</string>
+    <string name="submit">Submit</string>
+</resources>
