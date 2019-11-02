@@ -7,8 +7,10 @@ import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.ghazifardhan.glintstestghazi.R
+import com.ghazifardhan.glintstestghazi.models.general.Error
 import com.ghazifardhan.glintstestghazi.ui.main.MainActivity
 import com.ghazifardhan.glintstestghazi.ui.main.MainViewModel
+import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.toast
 
@@ -41,6 +43,10 @@ class LoginActivity : AppCompatActivity() {
                     toast("Logged in")
                     val i = Intent(this@LoginActivity, MainActivity::class.java)
                     startActivity(i)
+                } else if (it.code() == 401) {
+                    val gson = Gson()
+                    val errorModel = gson.fromJson(it.errorBody()?.charStream(), Error::class.java)
+                    toast(errorModel.message)
                 }
             })
         }
